@@ -13,36 +13,23 @@ slug: best-practices-for-writing-clean-and-maintainable-code
 
 
 
-Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
+Day 41 | 17-06-25
 
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+Yesterday I thought I write this concept of kid being alive in you, is one of the parameters of success.
 
-We get lots of complaints about it actually, with people regularly asking us things like:
+So the idea is, we all have dreams, day dreams, naïve targets, when we were a kid right.
+Those who pursue those diligently, for years and find themselves doing exactly what they dream of when they were 11, 14 or 17 years, have that part of psych still active in their brain. They were kid when they used to perform that activity for fun. Now they are into adulthood, performing the same activity with discipline, responsibility, status and money. A major part of their childhood is alive in their heart. Each heart beat resonates with the child who dreamt of this reality.
+For me it would be football in eight standard, cinematography in twelfth and dance in my college, each one of those have not been considered seriously for life, this is death before death. That part of you dies, you eventually forget it, it’s gone, past, as if it never happened in the first place, past remains past, reality is different, doors closed and plastered.
+My door for dance and cinema are not completely closed yet, but I have convinced myself that these wouldn’t let you escape the middle-class crisis, hence not giving it all. But it’s not all bad, I will continue dancing each weekend and will proudly call myself a dancer as long as my limbs are fine.
+One of my friends wanted to be an actor, model. She was one of those who consistently find themselves in front of mirror, then snapchat, melodramatic gurll, girl, bebo, diva. I feel I have felt her death when she was in high school, leaving THE friends and sobbing all night, and also her death in college. She is different now than when I found her. 
+That’s the pessimistic pov.
+Optimistically 
+We are still 21, as young as any grown man could dream of. We will find peace, happiness and hopefully mastery in aspects we haven’t even dreamt of. Life is full of surprises. My biggest surprise gift from college was dance, waiting for many others as I stride towards 25 then 30. 
 
-> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
-> We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
+And there are no adults, who are adults? grown-ups? very flawed concept, just to scare the kids.
+Always a spectrum. 
 
-The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
 
-It add a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
-
-```html
-<article className="prose">
-  <h1>Garlic bread with cheese: What the science tells us</h1>
-  <p>
-    For years parents have espoused the health benefits of eating garlic bread
-    with cheese to their children, with the food earning such an iconic status
-    in our culture that kids will often dress up as warm, cheesy loaf for
-    Halloween.
-  </p>
-  <p>
-    But a recent study shows that the celebrated appetizer may be linked to a
-    series of rabies cases springing up around the country.
-  </p>
-</article>
-```
-
-For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
 
 ---
 
