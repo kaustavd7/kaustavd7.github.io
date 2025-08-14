@@ -19,15 +19,15 @@ export default function ContactForm() {
       Hello! My name is{" "}
       <input
         type="text"
-        placeholder="your name"
+        placeholder="random name"
         {...register("name", { required: true, maxLength: 80 })}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      and I want to discuss a potential project. You can email me at
-      <input type="email" placeholder="your@email" {...register("email", {})}  className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
+      and I want to discuss. You can email me at
+      <input type="email" placeholder="@email" {...register("email", {})}  className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"/>
-      or reach out to me on
+      or reach out to me on 
       <input
         type="tel"
         placeholder="your phone"
@@ -35,9 +35,9 @@ export default function ContactForm() {
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      Here are some details about my project: <br />
+      Here are some details about: <br />
       <textarea {...register("project details", {})} 
-      placeholder="My project is about..."
+      placeholder="about..."
       rows={3}
       className="w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent" />

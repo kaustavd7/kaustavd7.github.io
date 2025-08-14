@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="text-center">
           interesting website, check:
           <a href="https://data.ensaaf.org/" className="underline" target="_blank">
-            kaustav
+            here
           </a>
         </div>
       </div>
