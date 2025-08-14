@@ -19,7 +19,7 @@ const HomeCoverSection = ({blogs}) => {
         <Image src={blog.image.src}
         placeholder='blur'
         blurDataURL={blog.image.blurDataURL}
-        alt={blog.title}
+        alt='manaar'
         fill
         className='w-full h-full object-center object-cover rounded-3xl -z-10'
         sizes='100vw'
