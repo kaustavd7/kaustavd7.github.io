@@ -29,6 +29,8 @@ const Skills = () => {
           The icon is collage of three frames from a fairly popular and good movie <i>la la land</i>. Liking a rom-com is actually extremely subjective. When you watch a WW2 film, everyone is fairly at same level, because the majority has never actually seen war. But rom-com - well, people have lived that stuff, so one is at the same level. Hence, a simple sweet rom-com is usually hit, as it resonates with masses. A complicated one, doesn't. la la land along with other elements had realistic ending, again resonating with mass. I like <i>materialist</i> for a very particular response in one of the dialougues.
           <br /> I personally don't like rom-com, full of cliche, predictable, normie stuff. But i like these two films. <br /> so yes romcom - subjective
         </p>
+        <p className="text-base sm:text-lg leading-relaxed">
+          One more thing, if you find blog starting with Day-XX | Date. It's because it was written on that date and the day-n signifies it was n-th day of me writting in my .doc. 
       </div>
     
       <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
