@@ -16,11 +16,11 @@ const Skills = () => {
       {/* Normal text paragraphs after bio */}
       <div className="mt-8 space-y-4">
         <p className="text-base sm:text-lg leading-relaxed">
-         I started writting about random stuff post summer-2024 to improve my articulations, under the umbrella of 'the placement prep'. I have penned down (not literally, i write in .doc) exactly 54 times, totalling word count o24613 as of 21st August, 2025. Quite a few times i have resolved to write daily, clearly i have failed. Tho much of content can't be shared in open internet, but some of it can. So, after college ended, with ample amount of FREE time. I decided to create this website, but each time i tried, the code failed at the same spot, my mechanical degree and chatgpt gave up. 
-         Halfway through august, with few days in hand before i leave home on train to Hazrat Nizamuddin Station for my job, this simple task had to be completed. "If not now, then forget it". So, this time taking the simpler path, i got the website up and running in few days with git-repos, chat-gpt and vercel. 
+         I started writting about random stuff post summer-2024 to improve my articulations, under the umbrella of 'the placement prep'. I have penned down (not literally, i write in .doc) exactly 54 times, totalling word count of 24613 as of 21st August, 2025. Quite a few times i have resolved to write daily, clearly i have failed. Tho much of content can't be shared in open internet, but some of it can. So, after college ended, with ample amount of FREE time. I decided to create this website, but each time i tried, the code failed at the same spot. <br /> My mechanical degree and chatgpt gave up. 
+        <br /> Halfway through august, with few days in hand before i leave home on train to Hazrat Nizamuddin Station for my job, my brain had me telling this simple task had to be completed. "If not now, then forget it". So, this time taking the simpler path, i got the website up and running in few days with git-repos, chat-gpt and vercel. 
         </p>
         <p className="text-base sm:text-lg leading-relaxed">
-          Now, the website the like a new toy to play with, for seven year old. You may find random component(not needed to the website), quotes, photos, with no correlations what-so-ever. I intend to keep it as my source of timepass and hence no advertisement as of yet.
+          Now, the website the like a new toy for seven year old, to play with. You may find random component(not needed to the website), quotes, photos, with no correlations what-so-ever. I intend to keep it as my source of timepass and hence no advertisement as of yet.
         </p>
       </div>
     
