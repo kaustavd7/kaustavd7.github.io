@@ -11,6 +11,18 @@ const Skills = () => {
       <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
         I'm a 21 year old naive human, archiving the words coz may be datacenters will be the only thing left in the future.
       </span>
+
+    
+      {/* Normal text paragraphs after bio */}
+      <div className="mt-8 space-y-4">
+        <p className="text-base sm:text-lg leading-relaxed">
+          Apart from these, I am also interested in building products and exploring new technologies.
+        </p>
+        <p className="text-base sm:text-lg leading-relaxed">
+          I love working on creative projects, collaborating with people, and continuously learning.
+        </p>
+      </div>
+    
       <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
         {SkillList.map((item, index) => {
           return (
