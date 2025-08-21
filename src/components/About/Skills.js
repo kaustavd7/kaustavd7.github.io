@@ -20,7 +20,7 @@ const Skills = () => {
         <br /> Halfway through august, with few days in hand before i leave home on train to Hazrat Nizamuddin Station for my job, my brain had me telling this simple task had to be completed. So, this time taking the simpler path, i got the website up and running in few days with git-repos, chat-gpt and vercel. 
         </p>
         <p className="text-base sm:text-lg leading-relaxed">
-          Now, the website the like a new toy for seven year old, to play with. You may find random component(not needed to the website), quotes, photos, with no correlation or pattern what-so-ever. I intend to keep it as my source of timepass and hence no advertisement as of yet.
+          Now, the website is like a new toy for seven year old, to play with. You may find random component(not needed to the website), quotes, photos, with no correlation or pattern what-so-ever. I intend to keep it as my source of timepass and hence no advertisement as of yet.
         </p>
         <p className="text-base sm:text-lg leading-relaxed">
           The name <i>kaayam</i>(qaayam) means ठहरना, ठहराव। arabic/persian word. <br /> I found the word when once i texted my friend "dunia kaayam h ishq ke wajah se, kuch toh sachai hogi isme". My curious mind wanted to know the literal meaning of the word - my heart loved the meaning, then, with extension, the word.
