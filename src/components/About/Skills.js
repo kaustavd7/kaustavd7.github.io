@@ -31,6 +31,7 @@ const Skills = () => {
         </p>
         <p className="text-base sm:text-lg leading-relaxed">
           One more thing, if you find blog starting with Day-XX | Date. It's because it was written on that date and the day-n signifies it was n-th day of me writting in my .doc. 
+        </p>
       </div>
     
       <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
