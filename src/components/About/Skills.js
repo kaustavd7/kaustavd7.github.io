@@ -9,17 +9,18 @@ const Skills = () => {
     <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light
      text-dark dark:text-light">
       <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
-        I'm a 21 year old naive human, archiving the words coz may be datacenters will be the only thing left in the future.
+        I'm a 21 year old guy, archiving the words coz may be datacenters will be the only thing left in the future.
       </span>
 
     
       {/* Normal text paragraphs after bio */}
       <div className="mt-8 space-y-4">
         <p className="text-base sm:text-lg leading-relaxed">
-          Apart from these, I am also interested in building products and exploring new technologies.
+         I started writting about random stuff post summer-2024 to improve my articulations, under the umbrella of 'the placement prep'. I have penned down (not literally, i write in .doc) exactly 54 times, totalling word count o24613 as of 21st August, 2025. Quite a few times i have resolved to write daily, clearly i have failed. Tho much of content can't be shared in open internet, but some of it can. So, after college ended, with ample amount of FREE time. I decided to create this website, but each time i tried, the code failed at the same spot, my mechanical degree and chatgpt gave up. 
+         Halfway through august, with few days in hand before i leave home on train to Hazrat Nizamuddin Station for my job, this simple task had to be completed. "If not now, then forget it". So, this time taking the simpler path, i got the website up and running in few days with git-repos, chat-gpt and vercel. 
         </p>
         <p className="text-base sm:text-lg leading-relaxed">
-          I love working on creative projects, collaborating with people, and continuously learning.
+          Now, the website the like a new toy to play with, for seven year old. You may find random component(not needed to the website), quotes, photos, with no correlations what-so-ever. I intend to keep it as my source of timepass and hence no advertisement as of yet.
         </p>
       </div>
     
