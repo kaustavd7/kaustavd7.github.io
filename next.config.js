@@ -25,15 +25,15 @@ module.exports = {
     }
   }
 
-/** @type {import('next').NextConfig} */
-const isVercel = process.env.VERCEL === "1";
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isVercel ? undefined : "export",
-  basePath: isVercel ? "" : "/kaustavd7.github.io",
   images: {
-    unoptimized: true,
+    unoptimized: true, // optional if you want to skip Next image optimization
   },
 };
 
 module.exports = nextConfig;
+
+
+
