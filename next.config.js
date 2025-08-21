@@ -25,13 +25,15 @@ module.exports = {
     }
   }
 
-  /** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
+const isVercel = process.env.VERCEL === "1";
+
 const nextConfig = {
- // output: 'export', // Export static HTML
- // basePath: '/kaustavd7.github.io', // Replace <repo-name> with your GitHub repo name
- images: {
-    unoptimized: true, // Disable Next.js image optimization for static export
+  output: isVercel ? undefined : "export",
+  basePath: isVercel ? "" : "/kaustavd7.github.io",
+  images: {
+    unoptimized: true,
   },
- };
+};
 
 module.exports = nextConfig;
