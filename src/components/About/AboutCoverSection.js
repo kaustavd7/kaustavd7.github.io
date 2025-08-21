@@ -17,7 +17,7 @@ const AboutCoverSection = () => {
             <h2 className='font-bold capitalize text-4xl xs:text-5xl sxl:text-6xl  text-center lg:text-left'>
             It’s hard not to like a person who not only notices the colours, but speaks them.
             </h2>
-            <p className='font-medium capitalize mt-4 text-base'>
+            <p className='font-medium mt-4 text-base'>
             do not go gentle into that good night. Old age should burn and rave at close of day; Rage, rage against the dying of the light.
             </p>
         </div>
