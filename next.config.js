@@ -27,8 +27,8 @@ module.exports = {
 
   /** @type {import('next').NextConfig} */
 const nextConfig = {
- output: 'export', // Export static HTML
- basePath: '/kaustavd7.github.io', // Replace <repo-name> with your GitHub repo name
+ // output: 'export', // Export static HTML
+ // basePath: '/kaustavd7.github.io', // Replace <repo-name> with your GitHub repo name
  images: {
     unoptimized: true, // Disable Next.js image optimization for static export
   },
