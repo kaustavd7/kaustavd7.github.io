@@ -3,12 +3,19 @@ import React, { useEffect, useState } from "react";
 import { createClient } from '@supabase/supabase-js'
 
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+// Build the client only when configured, so a missing env var doesn't throw at
+// import/prerender time (which would fail the whole production build). The view
+// counter simply no-ops until NEXT_PUBLIC_SUPABASE_URL/ANON_KEY are set.
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabase =
+  supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
 
 const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
+    if (!supabase) return;
     const incrementView = async () => {
       try {
         let { error } = await supabase.rpc("increment", {
@@ -33,6 +40,7 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
   }, [slug, noCount]);
 
   useEffect(() => {
+    if (!supabase) return;
     const getViews = async () => {
       try {
         let { data, error } = await supabase
