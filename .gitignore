@@ -40,3 +40,7 @@ next-env.d.ts
 /public/sitemap.xml
 /public/sitemap-0.xml
 
+# Instagram "Download your information" export (raw, large — never commit;
+# only the imported photos under content/photos/ belong in version control)
+/instagram-*/
+

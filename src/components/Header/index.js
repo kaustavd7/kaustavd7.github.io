@@ -5,12 +5,16 @@ import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon 
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { cx } from "@/src/utils";
 
 const Header = () => {
 
   const [mode, setMode] = useThemeSwitch();
   const [click, setClick] = useState(false);
+  const pathname = usePathname();
+  // On the gallery page the nav scrolls away with the page instead of floating.
+  const scrollAwayNav = pathname === "/gallery";
 
 const toggle = () =>{
   setClick(!click)
@@ -53,6 +57,7 @@ const toggle = () =>{
         
         >
             <Link href="/" className="mr-2">Home</Link>
+            <Link href="/gallery" className="mx-2">Gallery</Link>
             <Link href="/about" className="mx-2">About</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
@@ -67,9 +72,12 @@ const toggle = () =>{
         </nav>
 
 
-        <nav className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
-        fixed top-9 right-1/4 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
+        <nav className={cx(
+          "w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize items-center hidden sm:flex bg-light/80 backdrop-blur-sm z-50",
+          !scrollAwayNav && "fixed top-9 right-6 sm:right-10"
+        )}>
             <Link href="/" className="mr-2">Home</Link>
+            <Link href="/gallery" className="mx-2">Gallery</Link>
             <Link href="/about" className="mx-2">About</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }

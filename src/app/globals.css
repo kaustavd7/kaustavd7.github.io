@@ -6,6 +6,20 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Smooth, gradual light <-> dark cross-fade.
+   The `theme-transition` class is added to <html> only while a theme toggle is
+   in progress (then removed), so the slow transition applies to the colour
+   change itself without making hover/focus colours feel sluggish the rest of
+   the time, and without animating the initial page load. */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+    transition: background-color 800ms ease, color 800ms ease,
+                border-color 800ms ease, fill 800ms ease, stroke 800ms ease,
+                box-shadow 800ms ease !important;
+}
+
 h1>a>.icon.icon-link:before,
 h2>a>.icon.icon-link:before,
 h3>a>.icon.icon-link:before{

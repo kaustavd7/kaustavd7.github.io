@@ -16,6 +16,7 @@ const siteMetadata = {
     youtube: 'https://youtube.com/codebucks',
     linkedin: 'https://www.linkedin.com/in/codebucks/',
     dribbble: 'https://www.dribbble.com',
+    instagram: '', // set your Instagram URL to show the gallery's bottom-right link
     locale: 'en-US',
   }
   
