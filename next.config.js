@@ -28,6 +28,15 @@ module.exports = {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/blogs/too%20much',
+        destination: '/blogs/they-say',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     unoptimized: true, // optional if you want to skip Next image optimization
   },
